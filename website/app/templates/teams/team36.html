@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/single_team.css' %}" />
+    <title>Team 36</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <div class="title">
+            <div class="title-container">
+                <h1>Team 36</h1>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Ammunition recognition</h2>
+            <p>
+                The primary objective of this project is to develop a comprehensive system capable of accurately identifying and categorizing 
+                various types of mines and munitions using artificial intelligence and advanced image processing techniques.<br>
+                Through the deployment of machine learning algorithms and automated image recognition models, we aim to create a solution that can 
+                reliably detect and classify hazardous materials based on their visual characteristics. This technology will significantly enhance 
+                safety by providing  field operatives, demining teams, and defense personnel with quick, precise identification of explosive threats.<br>
+                The system will be trained on a diverse dataset of imagery to ensure robustness and adaptability across different environments and scenarios. 
+                By leveraging deep learning, the model will progressively improve its recognition accuracy, even under challenging conditions.<br>
+                This project aspires to make substantial contributions to humanitarian and military efforts, reducing the risks associated 
+                with unidentified explosive devices while streamlining the identification process.
+            </p>
+            <br>
+
+            <h2>Hyperspectral sensor</h2>
+            
+            <div class="construction">
+                <img src="https://static.wikia.nocookie.net/clubpenguin/images/9/9e/ConstructionWorkersPSA4.png/revision/latest?cb=20120530202012" alt="">
+                <div class="subtitle">
+                    <h3>Coming Soon !</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="back-button-container">
+            <a href="{% url 'teams' %}" class="back-button">Back to Teams</a>
+        </div>
+    </div>
+    <div class="team-members">
+        <div class="title">
+            <div class="title-container">
+                <h2>Team Members</h2>
+            </div>
+        </div>
+        
+        <div class="member-cards">
+            <div class="member-card">
+                <h3>Nathan-Gabriel Pundogar</h3>
+                <p>Connected Objects & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Quentin Rees</h3>
+                <p>Connected Objects & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Florian Potonne</h3>
+                <p>Cloud Computing & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Lucas Pettinato</h3>
+                <p>Connected Objects & Cybersecurity</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

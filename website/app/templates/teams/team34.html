@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/single_team.css' %}" />
+    <title>Team 34</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <div class="title">
+            <div class="title-container">
+                <h1>Team 34</h1>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Testing Landmine Detection Algorithms for Mobile Implementation in Adverse Conditions</h2>
+            <p>
+                Our project focuses on rigorously testing landmine detection algorithms developed in collaboration with partner teams, ensuring their reliability 
+                under challenging conditions such as low light, fog, and rain. Using algorithms and datasets provided by these teams, we simulate real-world environments 
+                to validate the effectiveness of these detection tools, assessing their performance for integration into a mobile application designed for field use.<br>
+                To meet the specific requirements for mobile implementation, we conduct our tests on entry-level Android devices with limited processing capacity, 
+                including 4 GB RAM and Snapdragon 400 processors. Our evaluation emphasizes critical metrics like true positive and negative rates, response times, 
+                and accuracy across varying environmental and terrain conditions. The process involves a comprehensive dataset of approximately 10,000 images that replicate 
+                diverse real-world scenarios, allowing us to assess each algorithm’s robustness and responsiveness thoroughly.<br>
+                By identifying areas for improvement and providing detailed feedback, our work supports the development of reliable landmine detection tools that will be 
+                implemented in a mobile application created by another team. This collaborative effort aims to produce a dependable, accessible detection tool that can 
+                enhance safety in demining operations worldwide, even under complex environmental conditions.
+
+            </p>
+            <br>
+
+            <h2>Infrared sensor</h2>
+            
+            <div class="construction">
+                <img src="https://static.wikia.nocookie.net/clubpenguin/images/9/9e/ConstructionWorkersPSA4.png/revision/latest?cb=20120530202012" alt="">
+                <div class="subtitle">
+                    <h3>Coming Soon !</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="back-button-container">
+            <a href="{% url 'teams' %}" class="back-button">Back to Teams</a>
+        </div>
+    </div>
+    <div class="team-members">
+        <div class="title">
+            <div class="title-container">
+                <h2>Team Members</h2>
+            </div>
+        </div>
+        <div class="member-cards">
+                        <div class="member-card">
+                <h3>Santiago Martin</h3>
+                <p>Data & Artificial Intelligence</p>
+            </div>
+            <div class="member-card">
+                <h3>Loévan Le Quernec</h3>
+                <p>Data & Artificial Intelligence</p>
+            </div>
+            <div class="member-card">
+                <h3>Léo Ringeissen</h3>
+                <p>Data & Artificial Intelligence</p>
+            </div>
+            <div class="member-card">
+                <h3>Julien Saleh</h3>
+                <p>Connected Objects & Cybersecurity</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

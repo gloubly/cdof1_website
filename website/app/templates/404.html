@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/404.css' %}">
+    <title>404 - Page Not Found</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="error-code">
+            <h1>4</h1>
+            <p>&#128559;</p>
+            <h1>4</h1>
+        </div>
+
+        
+        <p class="message">Oopsi ! Page Not Found</p>
+        <p class="description">It looks like the page you’re looking for doesn’t exist. But don’t worry, we’ll help you find your way back.</p>
+        <a href="/" class="home-button">Go to Homepage</a>
+    </div>
+    <script type="text/javascript" src="{% static 'scripts/index.js' %}"></script>
+    
+</body>
+</html>

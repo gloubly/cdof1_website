@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.error-code {
+    font-size: 3.5em;
+    color: #333;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.error-code h3 {
+    font-size: 0.5em;
+}
+
+.error-code p {
+    display: inline;
+    font-size: 1.5em;
+}
+
+.message {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.home-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+}
+
+.suggestions {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.suggestions a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.suggestions a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.image-container {
+    position: relative;
+    align-content: center;
+    display: inline-flex;
+    height:120px;
+    width: 120px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    border-radius: 8px;
+    position: absolute;
+    image-rendering: pixelated;
+    height: 70%;
+    width: 70%;
+}

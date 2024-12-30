@@ -1,0 +1,80 @@
+:root {
+    --bg-color: rgb(35, 40, 45);
+    --text-color: white;
+    --hover-color: black;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color:var(--bg-color);
+    width: 100%;
+    font-family: monaco, monospace;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    text-align: center;
+    padding: 8px;
+    float: left;
+
+}
+
+.navbar a:hover {
+    background-color: var(--hover-color);
+}
+
+.navbar .dropdown a {
+    float: none;
+}
+
+.navbar .media-container {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: var(--bg-color);
+    text-align: center;
+    float: right;
+}
+
+.navbar .dropdown-content .media-container {
+    float: none;
+}
+
+.navbar .media-container p {
+    padding: 0;
+    margin: 0 0 0 4px;
+}
+
+.navbar .media-container i {
+    display: inline;
+}
+
+.navbar .dropdown {
+    float: left;
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+    display: block
+}
+
+.navbar .media-container:hover {
+    background-color: var(--hover-color);
+}
+
+.navbar .dropbtn {
+    float: left;
+    display: block;
+    padding: 8px;
+    text-align: center;
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: left;
+}

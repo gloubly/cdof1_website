@@ -1,0 +1,155 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/single_team.css' %}" />
+    <title>Team 18</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <div class="title">
+            <div class="title-container">
+                <h1>Team 18</h1>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Localization Project</h2>
+            <p>🌍 Humanitarian Demining Project: Precision Landmine Localization 🌟<br>
+                Our team is dedicated to creating an accurate and scalable landmine localization
+                system, a critical component of a broader demining initiative.
+            </p>
+            <h3>🔍 Focus:</h3>
+                We specialize in the localization aspect of demining, leveraging cutting-edge GNSS RTK
+                technology to achieve pinpoint accuracy within 10 cm, ensuring safe and effective
+                operations.
+            </p>
+            <h3>🤝 Collaboration:</h3>
+            <p>
+                Our work integrates seamlessly with other teams handling pathfinding, buried mine
+                detection, and drone/robot-based marking, movement, and neutralization.
+            </p>
+            <h3>📋 Challenges:</h3>
+            <ul>
+                
+                <li>
+                    As engineering students not specialized in demining, we faced a steep learning
+                    curve in mastering advanced technologies like GNSS RTK and understanding
+                    international demining protocols.
+                </li>
+                <li>
+                    Interdisciplinary collaboration pushed us to align with teams working on robotics,
+                    sensors, and detection, ensuring full compatibility between components.
+                </li>
+                <li>
+                    Developing a solution that is not only precise and reliable but also cost-effective
+                    and scalable required balancing technical and practical constraints.
+                </li>
+            </ul>
+            <h3>📋 Goals:</h3>
+            <ul>
+                <li>Deliver a reliable, cost-effective solution adhering to international safetystandards.</li>
+                <li>Provide detailed documentation and training materials for ease of adoption.</li>
+                <li>Ensure scalability and compatibility with other technologies in the demining ecosystem.</li>
+            </ul>
+            <h3>👷 Our Goal:</h3>
+            <p>
+                Empower humanitarian demining organizations with a safe, efficient, and scalable
+                localization system, helping save lives and restore land to communities.<br>
+                #InnovationForGood #HumanitarianTech #DeminingInitiative #LandmineLocalization
+            </p>
+
+            <h2>Acoustic detection Project</h2>
+            <p>
+                🌍 Acoustic Sensors for Humanitarian Demining 🎤<br>
+                Our team is working on acoustic sensors to enhance landmine detection as part of a larger
+                demining initiative. These sensors have the potential to revolutionize how buried mines are
+                identified, offering a safe and innovative approach to this critical challenge.
+            </p>
+            <h3>🔬 Our Work:</h3>
+            <p>
+                We're focusing on data collection to refine and validate our acoustic sensor technology.
+                Here are our two main strategies:
+            </p>
+            <ol>
+                <li>
+                    Simulated Mine Testing:
+                    Using 3D-printed mines from our fab lab, we aim to replicate realistic conditions, allowing
+                    us to collect acoustic data in controlled environments and analyze the interaction of sound
+                    waves with buried objects.
+                </li>
+                <li>
+                    Real-World Data Exploration:
+                    We're investigating available datasets from regions heavily affected by landmines, such as
+                    Ukraine, Russia, and Cambodia, to enrich our analysis and ensure our approach is
+                    applicable in real-life scenarios.
+                </li>
+            </ol>
+            <h3>🎯 Why Acoustic Sensors?</h3>
+            <ul>
+                <li>
+                    Although acoustic sensors are commonly used for underwater mine detection, their
+                    application for landmines remains relatively underexplored.
+                </li>
+                <li>
+                    This technology could prove particularly valuable in muddy terrains, areas covered
+                    with snow, or during heavy rainfall, where other methods might be less effective.
+                </li>
+                <li>
+                    Non-invasive and adaptable, it offers a scalable solution suitable for diverse and challenging environments.
+                </li>
+            </ul>
+            <h3>👷 Our Goal:</h3>
+            <p>
+                To develop a precise and efficient acoustic sensor-based detection system,
+                empowering humanitarian organizations with tools to safely and effectively identify
+                landmines.<br>
+                #HumanitarianTech #AcousticSensors #DeminingInnovation #EngineeringForGood
+            </p>
+
+        </div>
+
+        <div class="back-button-container">
+            <a href="{% url 'teams' %}" class="back-button">Back to Teams</a>
+        </div>
+    </div>
+    <div class="team-members">
+        <div class="title">
+            <div class="title-container">
+                <h2>Team Members</h2>
+            </div>
+        </div>
+        <div class="member-cards">
+                        <div class="member-card">
+                <h3>Cornelie Joalie</h3>
+                <p>Data & Artificial Intelligence</p>
+            </div>
+            <div class="member-card">
+                <h3>Delafosse Margaux</h3>
+                <p>Data & Artificial Intelligence</p>
+            </div>
+            <div class="member-card">
+                <h3>Cotella Vincent</h3>
+                <p>Data & Artificial Intelligence</p>
+            </div>
+            <div class="member-card">
+                <h3>Giraud Romain</h3>
+                <p>Data & Artificial Intelligence</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // to replace all the hast-tags
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll('p').forEach(p => {
+                p.innerHTML = p.innerHTML.replace(/(#\b\w+(?!;)\b)/g, '<span class="hash-tag">$1</span>');
+                console.log(p.innerHTML)
+            })
+        });
+    </script>
+</body>
+</html>

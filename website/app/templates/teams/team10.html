@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/single_team.css' %}" />
+    <title>Team 10</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <div class="title">
+            <div class="title-container">
+                <h1>Team 10</h1>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Project Management</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mj7Xr7rs3zU?si=-EvN91QY850HBH64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <h2>Gas Detection</h2>
+            <p>
+                Our team is working on a project u3lizing Arduino modules to develop a gas detection system.<br>
+                The key components provided for this project include:
+            </p>
+            <ul>
+                <li>
+                    GPS Modules: These are used to pinpoint the loca3on of the detected gases, crucial for mapping the source and area affected.
+                </li>
+                <li>
+                    Gas Sensors: Specifically designed to detect various gases such as methane, LPG, and other gases of interest, depending on our chosen configuration.
+                </li>
+                <li>
+                    Arduino Chip: Serves as the core processing unit for interfacing the GPS and gas sensors.
+                </li>
+            </ul>
+            <h3>Project Purpose</h3>
+            <p>
+                We aim to detect and identify abnormal concentrations of gases, partcularly those emanating
+                from mining actvities. This involves:
+            </p>
+            <ul>
+                <li>Determining the specific gases we aim to detect.</li>
+                <li>Programming the gas sensor to identify target gases.</li>
+                <li>Using the GPS module to log the exact location of detection.</li>
+            </ul>
+            <h3>Data Management</h3>
+            <p>
+                All collected data will be submited to a centralized database, enabling detailed analysis and
+                monitoring of gas emissions over time.
+            </p>
+            <h3>Next Steps</h3>
+            <ul>
+                <li>Finalize the list of gases to detect.</li>
+                <li>Calibrate the gas sensor to ensure accuracy.</li>
+                <li>Integrate the system and test in real-world conditions.</li>
+            </ul>
+        </div>
+
+        <div class="back-button-container">
+            <a href="{% url 'teams' %}" class="back-button">Back to Teams</a>
+        </div>
+    </div>
+    <div class="team-members">
+        <div class="title">
+            <div class="title-container">
+                <h2>Team Members</h2>
+            </div>
+        </div>
+        <div class="member-cards">
+                        <div class="member-card">
+                <h3>Jinyoung Ko</h3>
+                <p>Data & Artificial Intelligence</p>
+            </div>
+            <div class="member-card">
+                <h3>Bastien Cherel</h3>
+                <p>Data & Artificial Intelligence</p>
+            </div>
+            <div class="member-card">
+                <h3>Sainan Bi</h3>
+                <p>Data & Artificial Intelligence</p>
+            </div>
+            <div class="member-card">
+                <h3>Viviana Konssi</h3>
+                <p>?</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

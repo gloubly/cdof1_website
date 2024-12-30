@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/single_team.css' %}" />
+    <title>Team 35</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <div class="title">
+            <div class="title-container">
+                <h1>Team 35</h1>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Synthetic data for AI training</h2>
+            <p>
+                The goal of this project is to generate a large volume of synthetic data (images) to train artificial intelligence (AI) models capable of detecting mines, with a particular focus on the PFM-1 mine, widely used in the conflict in Ukraine. The synthetic data creation team will focus on producing varied and realistic images by simulating different types of terrain, environments, and weather conditions. The pipeline will include annotation tools to enable rigorous analysis by AI models developed by other teams.<br>
+                The main objective is to produce a sufficient and diverse quantity of synthetic data to enable the training of an AI model capable of recognizing and detecting PFM-1 mines in complex environments.
+            </p>
+
+            <h2>Biological detection</h2>
+            
+            <div class="construction">
+                <img src="https://static.wikia.nocookie.net/clubpenguin/images/9/9e/ConstructionWorkersPSA4.png/revision/latest?cb=20120530202012" alt="">
+                <div class="subtitle">
+                    <h3>Coming Soon !</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="back-button-container">
+            <a href="{% url 'teams' %}" class="back-button">Back to Teams</a>
+        </div>
+    </div>
+    <div class="team-members">
+        <div class="title">
+            <div class="title-container">
+                <h2>Team Members</h2>
+            </div>
+        </div>
+        <div class="member-cards">
+                        <div class="member-card">
+                <h3>Thomas Soufflet</h3>
+                <p>Connected Objects & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Killian Lafaye</h3>
+                <p>Data & Artificial Intelligence</p>
+            </div>
+            <div class="member-card">
+                <h3>Marc Viallard</h3>
+                <p>Connected Objects & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>François-Xavier Herande</h3>
+                <p>Data & Artificial Intelligence</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

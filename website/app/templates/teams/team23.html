@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/single_team.css' %}" />
+    <title>Team 23</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <div class="title">
+            <div class="title-container">
+                <h1>Team 23</h1>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Testing algorithms in low light, fog, or rain conditions</h2>
+            <p>
+                The landmine detection project in Ukraine takes place in a critical humanitarian and security context. 
+                Due to the impact of mines on civilian populations and infrastructure reconstruction, it has become essential to have technological solutions that can locate and neutralize these devices efficiently and quickly. 
+                Since the beginning of the conflict, mine detection has been a major challenge due to the extent of contaminated areas and often extreme environmental conditions.
+                Current methods, such as metal detectors or sniffer dogs, are limited by factors such as changing weather conditions.<br>
+                In this context, our project aims to strengthen the capabilities of mine detection algorithms developed by other groups by testing them in challenging environmental conditions, such as low light, fog, and rain, which significantly affect the performance of recognition technologies. 
+                By collaborating with teams working on these algorithms, our approach is to create a realistic testing environment to assess their effectiveness in these extreme conditions.
+                The goal is to highlight the limitations of existing algorithms and propose improvements to ensure more reliable and faster detection, which could have a direct impact on the safety of populations and the resumption of demining activities in Ukraine.
+            </p>
+
+            <h2>Gas detection</h2>
+            <p>
+                Gas sensors represent a promising technology for mine detection in Ukraine, where the conflict has left vast areas contaminated by explosives.<br>
+                Although their use is still in development, these sensors could help identify emissions of specific chemical compounds, such as those released by TNT or other buried explosives.
+                Their future deployment would offer the possibility of complementing traditional demining methods by improving detection accuracy and speed, while reducing risks for deminers.<br>
+                This innovation could thus play a major role in securing agricultural land and essential infrastructure, facilitating reconstruction and the resumption of economic activities in Ukraine.
+            </p>
+
+        </div>
+
+        <div class="back-button-container">
+            <a href="{% url 'teams' %}" class="back-button">Back to Teams</a>
+        </div>
+    </div>
+    <div class="team-members">
+        <div class="title">
+            <div class="title-container">
+                <h2>Team Members</h2>
+            </div>
+        </div>
+        <div class="member-cards">
+                        <div class="member-card">
+                <h3>Valentin Bertogliati</h3>
+                <p>Connected Objects & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Anthony Khoury</h3>
+                <p>Connected Objects & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Giacomo Mantz</h3>
+                <p>Cloud Computing & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Khalil Hamrouni</h3>
+                <p>Cloud Computing & Cybersecurity</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

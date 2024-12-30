@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/single_team.css' %}" />
+    <title>Team 25</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <div class="title">
+            <div class="title-container">
+                <h1>Team 25</h1>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Landmine images gathering and false positives</h2>
+            
+            <div class="construction">
+                <img src="https://static.wikia.nocookie.net/clubpenguin/images/9/9e/ConstructionWorkersPSA4.png/revision/latest?cb=20120530202012" alt="">
+                <div class="subtitle">
+                    <h3>Coming Soon !</h3>
+                </div>
+            </div>
+
+            <h2>Ground penetrating radar</h2>
+            
+            <div class="construction">
+                <img src="https://static.wikia.nocookie.net/clubpenguin/images/9/9e/ConstructionWorkersPSA4.png/revision/latest?cb=20120530202012" alt="">
+                <div class="subtitle">
+                    <h3>Coming Soon !</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="back-button-container">
+            <a href="{% url 'teams' %}" class="back-button">Back to Teams</a>
+        </div>
+    </div>
+    <div class="team-members">
+        <div class="title">
+            <div class="title-container">
+                <h2>Team Members</h2>
+            </div>
+        </div>
+        <div class="member-cards">
+                        <div class="member-card">
+                <h3>Vivien Deblock</h3>
+                <p>Cloud Computing & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Mathias Balian</h3>
+                <p>Cloud Computing & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Alexis Minost</h3>
+                <p>Connected Objects & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Lazare Bordereaux</h3>
+                <p>Connected Objects & Cybersecurity</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

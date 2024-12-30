@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/single_team.css' %}" />
+    <title>Team 14</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <div class="title">
+            <div class="title-container">
+                <h1>Team 14</h1>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Communication</h2>
+            
+            <div class="construction">
+                <img src="https://static.wikia.nocookie.net/clubpenguin/images/9/9e/ConstructionWorkersPSA4.png/revision/latest?cb=20120530202012" alt="">
+                <div class="subtitle">
+                    <h3>Coming Soon !</h3>
+                </div>
+            </div>
+
+            <h2>Infrared sensor</h2>
+            
+            <div class="construction">
+                <img src="https://static.wikia.nocookie.net/clubpenguin/images/9/9e/ConstructionWorkersPSA4.png/revision/latest?cb=20120530202012" alt="">
+                <div class="subtitle">
+                    <h3>Coming Soon !</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="back-button-container">
+            <a href="{% url 'teams' %}" class="back-button">Back to Teams</a>
+        </div>
+    </div>
+    <div class="team-members">
+        <div class="title">
+            <div class="title-container">
+                <h2>Team Members</h2>
+            </div>
+        </div>
+        <div class="member-cards">
+                        <div class="member-card">
+                <h3>Louise Ferreira</h3>
+                <p>Data & Artificial Intelligence</p>
+            </div>
+            <div class="member-card">
+                <h3>Louis-Melchior Giraud</h3>
+                <p>Data & Artificial Intelligence</p>
+            </div>
+            <div class="member-card">
+                <h3>Etienne Goury</h3>
+                <p>Data & Artificial Intelligence</p>
+            </div>
+            <div class="member-card">
+                <h3>Thibaut Ermenault</h3>
+                <p>Data & Artificial Intelligence</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

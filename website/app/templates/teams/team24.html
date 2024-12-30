@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/single_team.css' %}" />
+    <title>Team 24</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <div class="title">
+            <div class="title-container">
+                <h1>Team 24</h1>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Value chain & Hyperspectral sensor</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/k8ZDWrY2kYI?si=D4RS9SdKRwIkcwp7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <div class="back-button-container">
+            <a href="{% url 'teams' %}" class="back-button">Back to Teams</a>
+        </div>
+    </div>
+    <div class="team-members">
+        <div class="title">
+            <div class="title-container">
+                <h2>Team Members</h2>
+            </div>
+        </div>
+        <div class="member-cards">
+                        <div class="member-card">
+                <h3>Jérémy Beugnon</h3>
+                <p>Connected Objects & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Alexandre Bernard</h3>
+                <p>Connected Objects & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Guillaume Eyssartier</h3>
+                <p>Connected Objects & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Paul Cuchet</h3>
+                <p>Connected Objects & Cybersecurity</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/single_team.css' %}" />
+    <title>Team 27</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <div class="title">
+            <div class="title-container">
+                <h1>Team 27</h1>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Pathfinding</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7J0bv4-dpP0?si=JV5IuKD0Ks6hhKGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <h2>Magnetic sensor</h2>
+            
+            <div class="construction">
+                <img src="https://static.wikia.nocookie.net/clubpenguin/images/9/9e/ConstructionWorkersPSA4.png/revision/latest?cb=20120530202012" alt="">
+                <div class="subtitle">
+                    <h3>Coming Soon !</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="back-button-container">
+            <a href="{% url 'teams' %}" class="back-button">Back to Teams</a>
+        </div>
+    </div>
+    <div class="team-members">
+        <div class="title">
+            <div class="title-container">
+                <h2>Team Members</h2>
+            </div>
+        </div>        <div class="member-cards">
+                        <div class="member-card">
+                <h3>Adrien Djebar</h3>
+                <p>Cloud Computing & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Adrien Balderacchi</h3>
+                <p>Cloud Computing & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Maxime Gay</h3>
+                <p>Cloud Computing & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Hugo Deduit</h3>
+                <p>Cloud Computing & Cybersecurity</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

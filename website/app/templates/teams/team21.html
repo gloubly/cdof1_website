@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/single_team.css' %}" />
+    <title>Team 21</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <div class="title">
+            <div class="title-container">
+                <h1>Team 21</h1>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Cybersecurity in databases</h2>
+            <p>
+                Our cybersecurity project focuses on safeguarding the entire mine-detection initiative. As the
+                central cybersecurity team, our mission is to protect all data and communications between
+                teams working on mine-detection technologies, including autonomous robots, image
+                collection, and pathfinding. By following the ISO 27001 standard, we aim to ensure that sensitive
+                information remains secure and protected against unauthorized access, cyberattacks, and data
+                leaks.<br>
+                This approach helps us uphold the three core pillars of cybersecurity: confidentiality, integrity,
+                and availability (CIA).
+            </p>
+            <ul>
+                <li>
+                    Confidentiality is ensured by encrypting sensitive data and managing access rights
+                    strictly, so that only authorized personnel can view or modify critical information.
+                </li>
+                <li>Integrity is maintained through digital signatures and file versioning.</li>
+                <li>
+                    To guarantee availability, we’ve introduced system redundancies, allowing autonomous
+                    robots and algorithms to function seamlessly even if disruptions or attacks occur.
+                </li>
+            </ul>
+            <p>
+                This comprehensive approach to cybersecurity is essential for the success of the entire project,
+                as it prevents potential vulnerabilities that could compromise on-the-ground operations.
+            </p>
+
+            <h2>Biological detection</h2>
+            
+            <div class="construction">
+                <img src="https://static.wikia.nocookie.net/clubpenguin/images/9/9e/ConstructionWorkersPSA4.png/revision/latest?cb=20120530202012" alt="">
+                <div class="subtitle">
+                    <h3>Coming Soon !</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="back-button-container">
+            <a href="{% url 'teams' %}" class="back-button">Back to Teams</a>
+        </div>
+    </div>
+    <div class="team-members">
+        <div class="title">
+            <div class="title-container">
+                <h2>Team Members</h2>
+            </div>
+        </div>
+        <div class="member-cards">
+                        <div class="member-card">
+                <h3>Matias Ottensen</h3>
+                <p>Cloud Computing & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Tiphaine Kachkachi</h3>
+                <p>Cloud Computing & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Paul Lacoutiere</h3>
+                <p>Cloud Computing & Cybersecurity</p>
+            </div>
+            <div class="member-card">
+                <h3>Manon Gardin</h3>
+                <p>Cloud Computing & Cybersecurity</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teams</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/teams.css' %}"/>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    
+    <div class="title">
+        <h1>Our Teams</h1>
+        <h3>To each team is attributed two projects, studied in <p>Security Use Cases</p> and <p>Veille et enjeux</p>.</h3>
+    </div>
+    <div class="teams-container">
+        <div class="column-header">
+            <h2>Group 1</h2>
+        </div>
+        <div class="column-header">
+            <h2>Group 2</h2>
+        </div>
+        <div class="column-header">
+            <h2>Group 3</h2>
+        </div>
+
+        <a id="team10" class="team-card" href="{% url 'team' id=10 %}">
+            <div class="team-number">
+                <h2>Team 10</h2>
+            </div>
+            <h4>Project Management</h4>
+            <h4>Biological Detection</h4>
+        </a>
+
+        <a id="team20" class="team-card" href="{% url 'team' id=20 %}">
+            <div class="team-number">
+                <h2>Team 20</h2>
+            </div>
+            <h4>Project Management</h4>
+            <h4>Acoustic sensor</h4>
+        </a>
+        <a id="team30" class="team-card" href="{% url 'team' id=30 %}">
+            <div class="team-number">
+                <h2>Team 30</h2>
+            </div>
+            <h4>Project management</h4>
+            <h4>Metal detection</h4>
+        </a>
+
+        <a id="team11" class="team-card" href="{% url 'team' id=11 %}">
+            <div class="team-number">
+                <h2>Team 11</h2>
+            </div>
+            <h4>Cybersecurity</h4>
+            <h4>Metal detection</h4>
+        </a>
+        <a id="team21" class="team-card" href="{% url 'team' id=21 %}">
+            <div class="team-number">
+                <h2>Team 21</h2>
+            </div>
+            <h4>Cybersecurity in databases</h4>
+            <h4>Biological detection</h4>
+        </a>
+        <a id="team31" class="team-card" href="{% url 'team' id=31 %}">
+            <div class="team-number">
+                <h2>Team 31</h2>
+            </div>
+            <h4>Cybersecurity in databases</h4>
+            <h4>Visual spectrum cameras</h4>
+        </a>
+    
+        <a id="team12" class="team-card" href="{% url 'team' id=12 %}">
+            <div class="team-number">
+                <h2>Team 12</h2>
+            </div>
+            <h4>Cartography, android application creation</h4>
+            <h4>LIDAR</h4>
+        </a>
+        <a id="team22" class="team-card" href="{% url 'team' id=22 %}">
+            <div class="team-number">
+                <h2>Team 22</h2>
+            </div>
+            <h4>State-of-the-art of autonomous robots projects for recognition and field analysis</h4>
+            <h4>Infrared sensor</h4>
+        </a>
+        <a id="team32" class="team-card" href="{% url 'team' id=32 %}">
+            <div class="team-number">
+                <h2>Team 32</h2>
+            </div>
+            <h4>Pathfinding</h4>
+            <h4>Gas sensor</h4>
+        </a>
+    
+    
+        <a id="team13" class="team-card" href="{% url 'team' id=13 %}">
+            <div class="team-number">
+                <h2>Team 13</h2>
+            </div>
+            <h4>Landmine recognition AI model</h4>
+            <h4>Visual spectrum cameras</h4>
+        </a>
+        <a id="team23" class="team-card" href="{% url 'team' id=23 %}">
+            <div class="team-number">
+                <h2>Team 23</h2>
+            </div>
+            <h4>Testing algorithms in low light, fog, or rain conditions</h4>
+            <h4>Gas detection</h4>
+        </a>
+        <a id="team33" class="team-card" href="{% url 'team' id=33 %}">
+            <div class="team-number">
+                <h2>Team 33</h2>
+            </div>
+            <h4>Smartphone app and AR headset</h4>
+            <h4>LIDAR detection</h4>
+        </a>
+    
+    
+        <a id="team14" class="team-card" href="{% url 'team' id=14 %}">
+            <div class="team-number">
+                <h2>Team 14</h2>
+            </div>
+            <h4>Communication</h4>
+            <h4>Infrared sensor</h4>
+        </a>
+        <a id="team24" class="team-card" href="{% url 'team' id=24 %}">
+            <div class="team-number">
+                <h2>Team 24</h2>
+            </div>
+            <h4>Value chain</h4>
+            <h4>Hyperspectral sensor</h4>
+        </a>
+        <a id="team34" class="team-card" href="{% url 'team' id=34 %}">
+            <div class="team-number">
+                <h2>Team 34</h2>
+            </div>
+            <h4>Testing Landmine Detection Algorithms for Mobile Implementation in Adverse Conditions</h4>
+            <h4>Infrared sensor</h4>
+        </a>
+    
+        <a id="team15" class="team-card" href="{% url 'team' id=15 %}">
+            <div class="team-number">
+                <h2>Team 15</h2>
+            </div>
+            <h4>Creation of training landmines for formation/sensibilization issues</h4>
+            <h4>Ground penetrating radar</h4>
+        </a>
+        <a id="team25" class="team-card" href="{% url 'team' id=25 %}">
+            <div class="team-number">
+                <h2>Team 25</h2>
+            </div>
+            <h4>Landmine images gathering and false positives</h4>
+            <h4>Ground penetrating radar</h4>
+        </a>
+        <a id="team35" class="team-card" href="{% url 'team' id=35 %}">
+            <div class="team-number">
+                <h2>Team 35</h2>
+            </div>
+            <h4>Synthetic data for AI training</h4>
+            <h4>Biological detection</h4>
+        </a>
+    
+        <a id="team16" class="team-card" href="{% url 'team' id=16 %}">
+            <div class="team-number">
+                <h2>Team 16</h2>
+            </div>
+            <h4>Macro analysis of mine-sweeping for a country</h4>
+            <h4>MRI for Landmine detection</h4>
+        </a>
+        <a id="team26" class="team-card" href="{% url 'team' id=26 %}">
+            <div class="team-number">
+                <h2>Team 26</h2>
+            </div>
+            <h4>Landmine images gathering in virtual environnements</h4>
+            <h4>Metal detection</h4>
+        </a>
+        <a id="team36" class="team-card" href="{% url 'team' id=36 %}">
+            <div class="team-number">
+                <h2>Team 36</h2>
+            </div>
+            <h4>Ammunition recognition</h4>
+            <h4>Hyperspectral sensor</h4>
+        </a>
+    
+    
+        <a id="team17" class="team-card" href="{% url 'team' id=17 %}">
+            <div class="team-number">
+                <h2>Team 17</h2>
+            </div>
+            <h4>Wire detection</h4>
+            <h4>Hyperspectral sensor</h4>
+        </a>
+        <a id="team27" class="team-card" href="{% url 'team' id=27 %}">
+            <div class="team-number">
+                <h2>Team 27</h2>
+            </div>
+            <h4>Pathfinding</h4>
+            <h4>Magnetic sensor</h4>
+        </a>
+        <a id="team37" class="team-card" href="{% url 'team' id=37 %}">
+            <div class="team-number">
+                <h2>Team 37</h2>
+            </div>
+            <h4>Marking, moving, or neutralizing via drone or robot</h4>
+            <h4>Biological sensor</h4>
+        </a>
+    
+        <a id="team18" class="team-card" href="{% url 'team' id=18 %}">
+            <div class="team-number">
+                <h2>Team 18</h2>
+            </div>
+            <h4>Localization</h4>
+            <h4>Acoustic detection</h4>
+        </a>
+
+        <a id="team38" class="team-card" href="{% url 'team' id=38 %}">
+            <div class="team-number">
+                <h2>Team 38</h2>
+            </div>
+            <h4>Pattern Recognition</h4>
+            <h4>Magnetic sensor</h4>
+        </a>
+    
+        <a id="team19" class="team-card" href="{% url 'team' id=19 %}">
+            <div class="team-number">
+                <h2>Team 19</h2>
+            </div>
+            <h4>Soil texture database creation & synthetic comparison</h4>
+            <h4>Gas detection</h4>
+        </a>   
+    </div>
+</body>
+</html>

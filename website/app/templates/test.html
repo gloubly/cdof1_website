@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+</head>
+<body>
+    <script>
+        function toggle_visibility(e) {
+            const content = e.nextElementSibling;
+            if(content.style.display=="block") {
+                content.style.display="none";
+                e.innerText = e.innerText.replace("❯", "﹀");
+                console.log(e.innerText)
+            } else {
+                content.style.display="block";
+                e.innerText = e.innerText.replace("﹀", "❯");
+            }
+        }
+    </script>
+    <div>
+        <div class="title" onclick="toggle_visibility(this)">
+            &#10095; Title
+        </div>
+        <div class="content">
+            <h5>hey</h5>
+        </div>
+    </div>
+    <style>
+
+    </style>
+</body>
+</html>
