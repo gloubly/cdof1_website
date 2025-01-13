@@ -20,5 +20,8 @@ def partners(request):
 def blog(request):
     return render(request, "blog.html")
 
+def test(request):
+    return render(request, "test.html")
+
 """def account(request):
     return render(request, "account.html")"""

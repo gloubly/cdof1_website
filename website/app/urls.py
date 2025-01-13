@@ -7,5 +7,6 @@ urlpatterns = [
     path("teams/<int:id>", views.team_page, name="team"),
     path("partners/", views.partners, name="partners"),
     path("blog/", views.blog, name="blog"),
+    path("test/", views.test, name="test")
     #path("account/", views.account, name="account")
 ]

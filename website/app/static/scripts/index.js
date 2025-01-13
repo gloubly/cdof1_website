@@ -12,7 +12,7 @@ window.addEventListener("keypress", (e) => {
             div = document.createElement("div");
             div.className = "image-container";
             div.innerHTML = `
-                <img src="app/static/images/test/eggs/egg1.png">
+                <a href="test/"><img src="app/static/images/test/eggs/egg1.png"></a>
             `;
             node.replaceChild(div, node.children[1]);
             txt = document.createElement("h3");

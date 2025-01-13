@@ -1,32 +1,178 @@
+{% load static %}
+<!-- ayo, you won't find anything better in this project than here ! -->
 <!DOCTYPE html>
 <html>
 <head>
     <title>Test</title>
 </head>
 <body>
-    <script>
-        function toggle_visibility(e) {
-            const content = e.nextElementSibling;
-            if(content.style.display=="block") {
-                content.style.display="none";
-                e.innerText = e.innerText.replace("❯", "﹀");
-                console.log(e.innerText)
-            } else {
-                content.style.display="block";
-                e.innerText = e.innerText.replace("﹀", "❯");
-            }
-        }
-    </script>
-    <div>
-        <div class="title" onclick="toggle_visibility(this)">
-            &#10095; Title
+    <div class="eggs-container">
+        <div style="padding-top: 70px;" class="egg-container">
+            <img class="egg" src="{% static 'images/test/eggs/egg1.png' %}" alt="" role="button" onclick="animate_egg(this)">
         </div>
-        <div class="content">
-            <h5>hey</h5>
+        <div style="padding-top: 30px;" class="egg-container">
+            <img class="egg" src="{% static 'images/test/eggs/egg2.png' %}" alt="" role="button" onclick="animate_egg(this)">
+        </div>
+        <div style="padding-top: 10px;" class="egg-container">
+            <img class="egg" src="{% static 'images/test/eggs/egg3.png' %}" alt="" role="button" onclick="animate_egg(this)">
+        </div>
+        <div class="egg-container">
+            <img class="egg" src="{% static 'images/test/eggs/egg4.png' %}" alt="" role="button" onclick="animate_egg(this)">
+        </div>
+        <div style="padding-top: 10px;" class="egg-container">
+            <img class="egg" src="{% static 'images/test/eggs/egg5.png' %}" alt="" role="button" onclick="animate_egg(this)">
+        </div>
+        <div style="padding-top: 30px;" class="egg-container">
+            <img class="egg" src="{% static 'images/test/eggs/egg6.png' %}" alt="" role="button" onclick="animate_egg(this)">
+        </div>
+        <div style="padding-top: 70px;" class="egg-container">
+            <img class="egg" src="{% static 'images/test/eggs/egg7.png' %}" alt="" role="button" onclick="animate_egg(this)">
         </div>
     </div>
+    <div class="meme">
+        <img style="padding: 0 20px" src="//i.imgflip.com/1ij781.jpg">
+    </div>
+
     <style>
+        :root {
+            --egg-width: 40px;
+            --rotation-angle: 30deg;
+        }
+
+        .eggs-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 50px;
+        }
+
+        .egg-container {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .egg {
+            image-rendering: pixelated;
+            width: var(--egg-width);
+            height: auto;
+            grid-row-start: 1;
+            grid-column-start: 1;
+            position: relative;
+        }
+
+        .egg:hover{
+            cursor: pointer;
+        }
+
+        .opening {
+            width: 35px;
+            height: auto;
+            grid-row-start: 1;
+            grid-column-start: 1;
+        }
+
+        .troll {
+            animation: rotation 1.1s linear infinite;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg)
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .meme {
+            padding-top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        
+        .meme img {
+            width: 500px;
+            height: auto;
+        }
+
+        .circle {
+            height: calc(var(--egg-width));
+            width: calc(var(--egg-width));
+            border-radius: 50%;
+            grid-row-start: 1;
+            grid-column-start: 1;
+        }
 
     </style>
+    <script>
+        var catsAdded = false
+        function animate_egg(element) {
+            element.animate(
+                [
+                    { transform: "rotate(0deg)" },
+                    { transform: "rotate(var(--rotation-angle)) translateX(calc(0.5*sin(var(--rotation-angle))*var(--egg-width))) translateY(calc(-0.3*sin(var(--rotation-angle))*var(--egg-width)))", offset: 0.09},
+                    { transform: "rotate(0deg) translateX(0) translateY(0)", offset: 0.18 },
+                    { transform: "rotate(calc(-1*var(--rotation-angle))) translateX(calc(-0.5*sin(var(--rotation-angle))*var(--egg-width))) translateY(calc(-0.3*sin(var(--rotation-angle))*var(--egg-width)))", offset: 0.27 },
+                    { transform: "rotate(0deg) translateX(0) translateY(0)", offset: 0.36 }
+                ], {
+                    duration: 1000,
+                    iterations: 3
+                }
+            )
+            setTimeout(()=>{
+                circle = document.createElement('span')
+                circle.className = 'circle'
+                element.parentNode.appendChild(circle)
+                circle.animate([
+                    { transform: "scale(0)", background: "#f0ad48", offset: 0 },
+                    { transform: "scale(1.4)", background: "white", offset: 1 }
+                ], {
+                    duration: 400,
+                    iterations: 1
+                })
+                setTimeout(()=>{
+                    element.style.visibility = "hidden"
+                    element.parentNode.appendChild(randomImage())
+                    if(!catsAdded) {
+                        div = document.querySelector(".meme")
+                        var img2 = document.createElement('img')
+                        img2.src = "https://media.tenor.com/qJRMLPlR3_8AAAAj/maxwell-cat.gif"
+                        img2.style.width = "400px"
+                        div.insertBefore(img2.cloneNode(), div.children[0])
+                        div.appendChild(img2)
+                        catsAdded = true
+                    }
+                }, 300)
+            }, 3000)
+            
+        }
+
+        function randomImage() {
+            var img = document.createElement('img')
+            var random = Math.random()
+            if(random<0.01) {
+                img.src = "https://www.pokepedia.fr/images/f/f7/Sprite_0384_E.gif"
+                img.className = "opening"
+                img.style.width = "45px"
+            } else if(random<0.15) {
+                img.src = "https://www.pokepedia.fr/images/6/67/Sprite_0376_E.gif"
+                img.className = "opening"
+                img.style.width = "45px"
+            } else if(random<0.4) {
+                img.src = "https://static.wikia.nocookie.net/clubpenguin/images/3/31/Blue_Puffle_Emoticon.PNG/"
+                img.className = "opening"
+            } else {
+                img.src = "{% static 'images/test/troll.png' %}"
+                img.classList.add("troll", "opening")
+            }
+            return img
+        }
+    </script>
 </body>
 </html>
