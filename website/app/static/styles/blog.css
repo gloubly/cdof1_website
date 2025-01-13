@@ -59,7 +59,7 @@ header p {
 /* article subtitle */
 .article h3 {
     font-size: 1em;
-    margin: 1em 0 0.7em 0;
+    margin: 1em 0 0.4em 0;
     color: var(--title-color);
     text-align: left;
 }
@@ -68,6 +68,18 @@ header p {
     display: none;
     margin-top: 10px;
     text-align: left;
+}
+
+.full-content ul,ol {
+    list-style-position: outside;
+    padding-left: 30px;
+    margin: 0;
+}
+
+.full-content li {
+    list-style-position: inside;
+    text-indent: -20px;
+    text-align: justify;
 }
 
 .btn-content-container {
@@ -169,8 +181,9 @@ header p {
 }
 
 .instagram {
-    width: 30%;
-    margin: 0 auto;
+    margin: auto;
+    padding: auto;
+    max-width: 400px !important;
 }
 
 .hash-tag {

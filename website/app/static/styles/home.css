@@ -47,6 +47,7 @@ header p {
     margin-bottom: 20px;
     font-size: 1.1em;
     color: #555;
+    text-align: justify;
 }
 
 .highlight {
