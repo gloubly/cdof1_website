@@ -136,9 +136,10 @@
                     duration: 400,
                     iterations: 1
                 })
+                random_image = randomImage() // ensure the image will be fully loaded before animation end
                 setTimeout(()=>{
                     element.style.visibility = "hidden"
-                    element.parentNode.appendChild(randomImage())
+                    element.parentNode.appendChild(random_image)
                     if(!catsAdded) {
                         div = document.querySelector(".meme")
                         var img2 = document.createElement('img')
